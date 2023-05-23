@@ -483,7 +483,7 @@ app.scroll = {
     $("[data-goto]").click(function(e) {
       e.preventDefault();
       app.scroll.goto($(this).attr("data-goto"));
-      return console.log("data");
+      return app.header.nav.out();
     });
     hash = window.location.hash.replace("#", "");
     if (hash !== "") {
@@ -571,7 +571,7 @@ app.scroll = {
     }
     from = $("[data-goto='" + to + "']");
     if (!add) {
-      add = $("header").height() + 80;
+      add = $("header").height() - 40;
       if (from.closest("[sticky]").length) {
         add += from.closest("[sticky]").height();
       }
