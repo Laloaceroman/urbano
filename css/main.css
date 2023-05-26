@@ -3685,6 +3685,53 @@ section.section--contact .section__infos .section__info .section__icon {
 section.section--contact .section__infos .section__info .section__icon img {
   width: 30px;
 }
+section.section--map,
+section .section__map {
+  height: 500px;
+}
+section.section--map .map,
+section .section__map .map,
+section.section--map .map-gmap,
+section .section__map .map-gmap {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+section.section--map .section__map__link,
+section .section__map .section__map__link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section.section--map .section-map-link,
+section .section__map .section-map-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section.section--map .section__map__map,
+section .section__map .section__map__map {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 720px) {
+  section.section--map .section__map__map,
+  section .section__map .section__map__map {
+    height: 500px;
+  }
+}
 .slider {
   position: relative;
   width: 100%;
