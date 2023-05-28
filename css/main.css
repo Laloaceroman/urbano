@@ -1610,6 +1610,7 @@ article {
   padding: 10px;
   background-color: #fff;
   border: 1px solid rgba(0,0,0,0.1);
+  text-align: justify;
 }
 @media (min-width: 720px) {
   article {
@@ -3296,7 +3297,7 @@ section {
   background-color: #fcfcfc;
   color: #202020;
   overflow: hidden;
-  text-align: left;
+  text-align: justify;
   z-index: 0;
   background-color: #fcfcfc;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23e3e3e3' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
@@ -3386,7 +3387,7 @@ section .section__content {
   color: #202020;
   font-size: 14px;
   line-height: 22px;
-  text-align: left;
+  text-align: justify;
 }
 @media (min-width: 720px) {
   section .section__content {
@@ -3685,14 +3686,11 @@ section.section--contact .section__infos .section__info .section__icon {
 section.section--contact .section__infos .section__info .section__icon img {
   width: 30px;
 }
-section.section--map,
-section .section__map {
+section.section--map .section__map {
   height: 500px;
 }
-section.section--map .map,
-section .section__map .map,
-section.section--map .map-gmap,
-section .section__map .map-gmap {
+section.section--map .section__map .map,
+section.section--map .section__map .map-gmap {
   display: block;
   position: absolute;
   top: 0;
@@ -3701,8 +3699,7 @@ section .section__map .map-gmap {
   height: 100%;
   padding: 5px;
 }
-section.section--map .section__map__link,
-section .section__map .section__map__link {
+section.section--map .section__map .section__map__link {
   display: block;
   position: absolute;
   top: 0;
@@ -3710,16 +3707,14 @@ section .section__map .section__map__link {
   width: 100%;
   height: 100%;
 }
-section.section--map .section-map-link,
-section .section__map .section-map-link {
+section.section--map .section__map .section-map-link {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-section.section--map .section__map__map,
-section .section__map .section__map__map {
+section.section--map .section__map .section__map__map {
   position: relative;
   overflow: hidden;
   height: 500px;
@@ -3727,8 +3722,7 @@ section .section__map .section__map__map {
   width: 100%;
 }
 @media (min-width: 720px) {
-  section.section--map .section__map__map,
-  section .section__map .section__map__map {
+  section.section--map .section__map .section__map__map {
     height: 500px;
   }
 }
